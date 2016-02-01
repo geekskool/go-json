@@ -207,7 +207,6 @@ func (m Json) getElement() interface{} {
 			return m.Bool
 		default:
 			fmt.Println("Don't know how to handle the type")
-			os.Exit(1)
 	}
 	return ""
 }
@@ -230,5 +229,4 @@ func main(){
 		k := result.getElement()
 		fmt.Println(k)		
 	}
-	os.Exit(0)
 }
