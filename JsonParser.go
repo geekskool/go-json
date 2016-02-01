@@ -213,7 +213,7 @@ func (m Json) getElement() interface{} {
 }
 
 func main(){
-	buf, err := ioutil.ReadFile("test.txt") //Reading the file completely
+	buf, err := ioutil.ReadFile("test.json") //Reading the file completely
 	if err != nil {                          //error check
 		fmt.Println(err)
 		os.Exit(1)
